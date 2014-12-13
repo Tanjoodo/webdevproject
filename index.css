@@ -1,0 +1,33 @@
+div.content{
+	background-color: #222222;
+	background-position: center;
+	margin-top: 0px;
+	margin-right: 5%;
+	margin-left: 5%;
+	background-image: url(assets/index/cover-edited.jpg);
+	background-repeat: no-repeat;
+	height:514px;
+}
+
+div.buttons{
+	background-color: #555555;
+	width:500px;
+	height:74px;
+	text-align:center;
+	margin: auto;
+	border-radius:10px;
+	position: relative;
+	top:430px;
+}
+
+span.button{
+	height: 64px;
+	width: 64px;
+	position: relative;
+	top: 5px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+

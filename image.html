@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Image</title>
+
+		<link rel="stylesheet" type="text/css" href="image.css" />
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<script type="text/javascript" src="image.js"></script>
+		<script type="text/javascript">
+			var current = parseInt(getParameterByName("image"));
+			var directory = getParameterByName("dir");
+			var lastPicture = parseInt(getParameterByName("last"));
+		</script>
+	</head>
+
+	<body onload="setImageFirstTime(directory, current, lastPicture);">
+		<div class="header">
+			<div class="navigation">
+				<img src="assets/arrow_left.png" height="64" width="64" alt="previous" onclick="
+				current = prevImage(lastPicture, current, directory);
+				setImage(directory, current, lastPicture);"
+				style="cursor: pointer" />
+
+				<a href="index.html"><img src="assets/home.png" height="64" width="64" alt="home" /></a>
+
+				<img src="assets/arrow_right.png" height="64" width="64" alt="next" onclick="
+				current = nextImage(lastPicture, current, directory);
+				setImage(directory, current, lastPicture);"
+				style="cursor: pointer"/>
+			</div>
+		</div>
+		<div id="imgcontdiv" class="imagecontainer">
+			<div id="imgcont" class="image" >
+			</div>
+		</div>
+
+	</body>
+
+</html>

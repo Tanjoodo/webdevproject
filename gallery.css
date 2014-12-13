@@ -1,0 +1,14 @@
+div.imagecontainer{
+	background-color: #222222;
+	border-radius: 10px;
+	margin-right: auto;
+	margin-left: auto;
+	width:80%;
+	text-align: center;
+	padding: 10px;
+}
+
+img
+{
+	cursor: pointer;
+}
